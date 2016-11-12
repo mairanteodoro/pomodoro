@@ -1,0 +1,67 @@
+// size of dashboard
+$size: 300px;
+$controller-font-size: 20px;
+
+// .container {
+//   border: 1px solid black;
+// }
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: $size;
+  height: $size;
+  border: 10px solid green;
+  border-radius: 50%;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.display {
+  font-size: 64px;
+  font-weight: 200;
+  color: white;
+  // border: 1px solid black;
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-weight: 200;
+}
+
+.controller-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-weight: 200;
+}
+
+.increment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  // border: 1px solid white;
+}
+
+.set-break {
+  // border: 1px solid purple;
+  font-size: $controller-font-size;
+}
+
+.set-session {
+  // border: 1px solid orange;
+  font-size: $controller-font-size;
+}
+
+.no-select {
+  outline-style: none; /* user cannot select item */
+  cursor: default; /* cursor does not turn into "selectable" cursor */
+}
